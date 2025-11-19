@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday!</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        text-align: center;
+        color: #fff;
+    }
+
+    .container {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 30px;
+        animation: fadeIn 2s ease;
+    }
+
+    .msg {
+        font-size: 1.3rem;
+        margin-top: 20px;
+        animation: fadeIn 3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    .photo {
+        margin-top: 30px;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        border: 6px solid white;
+        object-fit: cover;
+        animation: fadeIn 2s ease;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 15px 25px;
+        background: #fff;
+        color: #ff6f91;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ffe3ed;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <img class="photo" src="friend-photo.jpg" alt="Friend Photo">
+
+    <h1>🎉 Happy Birthday, My Friend! 🎂</h1>
+
+    <p class="msg">
+        Wishing you a day filled with joy, happiness, and all your favourite things.
+        <br> May this year bring you success and endless smiles! 💖✨
+    </p>
+
+    <button onclick="playMusic()">Play Birthday Song 🎵</button>
+</div>
+
+<audio id="song" src="birthday.mp3"></audio>
+
+<script>
+function playMusic() {
+    document.getElementById("song").play();
+}
+</script>
+
+</body>
+</html>
